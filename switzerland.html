@@ -46,13 +46,13 @@ p {
 </p>
 
 <script>
-var myTimer;
+//var currTimer = null;
 var sec = 0;
 var min = 0;
 var hour = 0;
 
 function startTimer() {
-  myTimer = setInterval(myTimer, 1000);
+  currTimer = setInterval(myTimer, 1000);
 }
 
 function myTimer() { 
@@ -72,7 +72,7 @@ function myTimer() {
 }
 
 function stopTimer() { 
-  clearInterval(myTimer);
+  clearInterval(currTimer);
 }
 
 function resetTimer() { 
